@@ -56,7 +56,7 @@ app.get('/:formId/filteredResponses', checkAuthorization, async (req, res) => {
         
 
         const totalResponses = filteredSubmissions.length;
-        const pageCount = Math.ceil(totalResponses / 10); // Assuming 10 responses per page
+        const pageCount = Math.ceil(totalResponses / 10); 
 
         res.json({
             responses: filteredSubmissions,
